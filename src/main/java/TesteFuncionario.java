@@ -1,5 +1,5 @@
 
-public class Teste {
+public class TesteFuncionario {
 
 	public static void main(String[] args) {
 		Funcionario f1 = new Funcionario();

@@ -3,6 +3,7 @@ public class Funcionario {
 	
 	private String nome;
 	private String cpf;
+	// protected significa publico para as classes filhas
 	private double salario;
 	private int tipo = 0; //0- Funcionario comum, 1- Gerente, 2- Diretor 
 	
@@ -17,8 +18,6 @@ public class Funcionario {
 		} else {
 			return this.salario + 1000.0;
 		}
-		
-		
 	}
 	
 	public void setTipo (int tipo) {
@@ -33,18 +32,23 @@ public class Funcionario {
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public String getCpf() {
 		return cpf;
 	}
+
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
 	public double getSalario() {
 		return salario;
 	}
+
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
