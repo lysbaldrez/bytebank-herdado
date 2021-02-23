@@ -6,10 +6,7 @@ public class Funcionario {
 	// protected significa publico para as classes filhas
 	private double salario;
 	private int tipo = 0; //0- Funcionario comum, 1- Gerente, 2- Diretor 
-	
-//	public Funcionario () {
-//		
-//	}
+
 	public double getBonificacao() {
 		if(this.tipo == 0) { // Funcionario comum 
 			return this.salario * 0.1;
