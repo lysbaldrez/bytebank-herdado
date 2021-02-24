@@ -8,13 +8,7 @@ public class Funcionario {
 	private int tipo = 0; //0- Funcionario comum, 1- Gerente, 2- Diretor 
 
 	public double getBonificacao() {
-		if(this.tipo == 0) { // Funcionario comum 
-			return this.salario * 0.1;
-		} else if (this.tipo == 1) { // Gerente 
-			return this.salario;
-		} else {
-			return this.salario + 1000.0;
-		}
+		return this.salario * 0.1;
 	}
 	
 	public void setTipo (int tipo) {
